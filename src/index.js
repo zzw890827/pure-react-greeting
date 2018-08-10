@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function Greeting() {
-  let username = 'null';
+  let username;
   return (
     <span>
-      {(username === 'undefined' || username === 'null') ?
+      {(username === undefined || username === 'null') ?
         'Not logged in.' : 'Hello ' + username}
     </span>
   )
